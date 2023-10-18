@@ -35,11 +35,10 @@ def read_data(path, skiprows=0):
         df = pd.read_excel(path, skiprows=skiprows)
     elif file_type.lower() in ['.csv']:
         df = pd.read_csv(path, skiprows=skiprows)
-    df.head(2).T
+
     df.columns = [fix_column(x) for x in df.columns]
     df.fillna('', inplace=True)
     print("Num:", df.shape[0])
-    display(df.head(2).T)
     return df
 
 
