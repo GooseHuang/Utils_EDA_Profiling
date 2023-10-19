@@ -48,7 +48,9 @@ def get_single_variable(df, feature_col, id_col='smc'):
     return res
 
 
-
+# df = read_data('./data/XXXX.xlsx', skiprows=0)
+# check_missing(df)
+# get_single_variable(df, 'XXXX')
 
 
 def main():
